@@ -66,3 +66,26 @@ function generatePassword() {
             password.push(numericChar[i]);
         }
     }
+
+
+    // Picking random characters within the index of random number
+    var returnValue = [];
+    for (var i = 0; i < options.length; ++i) {
+        var randomSelector = Math.floor(Math.random()*Math.floor(password.length));
+        returnValue.push(password[randomSelector])
+    }
+
+
+    console.log(returnValue)
+    var finalGeneration = returnValue.join('');
+    console.log(finalGeneration)
+    document.getElementById("password").textContent = finalGeneration;
+}
+  
+    var password = "";
+    function copyToLabel() {
+        document.getElementById("password").select();
+        document.execCommand("Copy");
+      
+    }
+    generateBtn.addEventListener("click", generatePassword);
