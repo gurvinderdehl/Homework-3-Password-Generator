@@ -38,7 +38,7 @@ function buttonClicked() {
 	return characterChoices;
 }
 
-
+//Create a function to generate a password from the users answer 
 function generatePassword() {
 	var options = buttonClicked();
 	console.log(options);
