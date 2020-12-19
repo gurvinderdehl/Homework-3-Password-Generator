@@ -28,3 +28,14 @@ function buttonClicked() {
         alert("Your password must include at least one number, one Capital Letter, one Lowercase Letter and one Special character.");
         return;
     }
+
+    //Creating a variable to hold all the options
+    var characterChoices = {
+        length : length,
+        specialCharacters: confirmSpecialChar,
+        lowerCaseCharacters: confirmLowerCase,
+        uppercaseCharacters: confirmUpperCase,
+        numericCharacters: confirmNumeric
+    }
+    return characterChoices;
+}
