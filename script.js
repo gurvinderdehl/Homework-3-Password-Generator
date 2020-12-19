@@ -27,7 +27,7 @@ function buttonClicked() {
 		return;
 	}
 
-	//Creating a variable to hold all the options
+	//Creating a object to hold all the options
 	var characterChoices = {
 		length: length,
 		specialCharacters: confirmSpecialChar,
