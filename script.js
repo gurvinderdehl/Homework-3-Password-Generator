@@ -39,3 +39,30 @@ function buttonClicked() {
     }
     return characterChoices;
 }
+
+
+function generatePassword() {
+    var options = buttonClicked();
+    console.log(options)
+    var password = [];
+    console.log(password)
+    if (options.specialCharacters) {
+        for (i = 0; i < specialChar.length; ++i) {
+            password.push(specialChar[i]);
+        }
+    }
+    else if (options.lowerCaseCharacters) {
+        for (i = 0; i < lowerCase.length; ++i) {
+            password.push(lowerCase[i]);
+        }
+    }
+    else if (options.uppercaseCharacters) {
+        for (i = 0; i < upperCase.length; ++i) {
+            password.push(upperCase[i]);
+        }
+    }
+    else if (options.numericCharacters) {
+        for (i = 0; i < numericChar.length; ++i) {
+            password.push(numericChar[i]);
+        }
+    }
