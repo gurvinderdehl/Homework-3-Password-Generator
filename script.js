@@ -23,7 +23,7 @@ function buttonClicked() {
     var confirmNumeric = confirm("Do you want your password to contain numbers?");
     var confirmUpperCase = confirm("Do You want your password to contain Capital Letters?");
     var confirmLowerCase = confirm("Do you want your password to contain Lowercase Letters?");
-    var confirmSpecialChar = confirm("Do you wnat your password to contain special characters?");
+    var confirmSpecialChar = confirm("Do you want your password to contain special characters?");
     if (!confirmSpecialChar && !confirmLowerCase && !confirmUpperCase && !confirmNumeric) {
         alert("Your password must include at least one number, one Capital Letter, one Lowercase Letter and one Special character.");
         return;
